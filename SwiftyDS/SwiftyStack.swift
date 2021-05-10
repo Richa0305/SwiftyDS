@@ -7,22 +7,22 @@
 
 import Foundation
 // Array based Implementation
-class Stack<Element> {
-
+public class Stack<Element> {
+    public init() {}
     var stackArray = [Element]()
-    func  push(val: Element)  {
+    public func  push(val: Element)  {
         stackArray.append(val)
     }
-    func pop() -> Element? {
+    public func pop() -> Element? {
         return stackArray.removeLast()
     }
-    func peek() -> Element? {
+    public func peek() -> Element? {
         return stackArray.last
     }
 }
 
 // Linked List Based Implemention
-class LLStack<T> {
+public class LLStack<T> {
     var value: T
     var next: LLStack?
     init(val: T) {
@@ -30,10 +30,10 @@ class LLStack<T> {
     }
 }
 
-class LLStackImplementation<T> {
+public class LLStackImplementation<T> {
     var headNode: LLStack<T>?
-    
-    func pushInStack(val: T) {
+    public init() {}
+    public func pushInStack(val: T) {
         let newNode = LLStack(val: val)
         if headNode == nil {
             headNode = newNode
@@ -44,7 +44,7 @@ class LLStackImplementation<T> {
         }
     }
     
-    func popFromStack() -> T? {
+    public func popFromStack() -> T? {
         let currentTop = headNode
         if headNode?.next != nil {
             headNode = headNode?.next
@@ -54,7 +54,7 @@ class LLStackImplementation<T> {
         return currentTop?.value
     }
     
-    func peek() -> T? {
+    public func peek() -> T? {
         return headNode?.value
     }
 }
