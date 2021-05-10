@@ -13,7 +13,7 @@ public class Stack<Element> {
     public func  push(val: Element)  {
         stackArray.append(val)
     }
-    public func pop() -> Element? {
+    public func pop() -> Element {
         return stackArray.removeLast()
     }
     public func peek() -> Element? {
