@@ -17,6 +17,7 @@
 		7E3AFE3E2648E35600512AFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E3AFE3C2648E35600512AFF /* Main.storyboard */; };
 		7E3AFE402648E35A00512AFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E3AFE3F2648E35A00512AFF /* Assets.xcassets */; };
 		7E3AFE432648E35A00512AFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E3AFE412648E35A00512AFF /* LaunchScreen.storyboard */; };
+		7E3AFE492648F0C200512AFF /* SwiftyQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3AFE482648F0C200512AFF /* SwiftyQueue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		7E3AFE3F2648E35A00512AFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E3AFE422648E35A00512AFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E3AFE442648E35A00512AFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E3AFE482648F0C200512AFF /* SwiftyQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyQueue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				7E3AFE172648DB6B00512AFF /* SwiftyDS.h */,
 				7E3AFE182648DB6B00512AFF /* Info.plist */,
 				7E3AFE2E2648DDFA00512AFF /* SwiftyStack.swift */,
+				7E3AFE482648F0C200512AFF /* SwiftyQueue.swift */,
 			);
 			path = SwiftyDS;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E3AFE2F2648DDFA00512AFF /* SwiftyStack.swift in Sources */,
+				7E3AFE492648F0C200512AFF /* SwiftyQueue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,7 +455,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SwiftyDS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -477,7 +481,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SwiftyDS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -534,7 +538,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftyDSExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -553,7 +557,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftyDSExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

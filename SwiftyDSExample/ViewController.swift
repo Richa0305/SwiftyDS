@@ -32,6 +32,19 @@ class ViewController: UIViewController {
         llstack.popFromStack()
         llstack.peek()
         llstack.popFromStack()
+        
+        // Queue array Implementation
+        let queue = Queue<String>()
+        queue.enQueue(val: "Hi")
+        queue.enQueue(val: "thr")
+        queue.deQueue()
+        
+        // Queue LinkedList Implementation
+        let llQueue = LLQueueImp<Int>()
+        llQueue.enQueue(val: 1)
+        llQueue.enQueue(val: 2)
+        llQueue.deQueue()
+        llQueue.peek()
     }
 
 
